@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 110vh;
+    background: #e3f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    background: #17181a;
+    padding: 15px;
+    border-radius: 17px;
+    padding-bottom: 20px;
+}
+
+.calculator p{
+    color: white;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-left: 8px;
+}
+
+.calculator p span{
+    color: #ff7629;
+    text-decoration: underline;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: #303136;
+    font-size: 17px;
+    color: #ff7629;
+    cursor: pointer;
+    margin: 7px;
+}
+
+.calculator form input:hover {
+    box-shadow: 0 0 10px #ff7629, 0 0 20px #ff7629;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+form input.top-btn {
+    border-radius: 65px;
+    height: 32px;
+    width: 58px;
+    background-color: #616161;
+    color: #fff;
+    font-weight: 500;
+}
+
+form .display {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    height: 90px;
+    overflow: hidden;
+    width: 240px; /* ফিক্সড করে দিলাম */
+}
+
+#expression, #result {
+    min-height: 40px;
+    text-align: right;
+    padding: 5px 5px;
+    word-wrap: break-word;
+}
+
+#expression {
+    font-size: 22px;
+    color: #aaa;
+}
+
+#result {
+    font-size: 35px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+
+
+
+form input.equal {
+    width: 114px;
+    background: #fff;
+    color: #17181a;
+}
+
+form input.operator {
+    background: #ff7629;
+    color: #303136;
+}
